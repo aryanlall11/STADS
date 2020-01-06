@@ -52,8 +52,8 @@ def r(f_n_max = f_noise_max, f_n_min = f_noise_min):
 # Selecting the stars
 n = 25
 w=50
-x = 10 + (image.shape[1] - w-2) * np.random.random(n)
-y = 10 + (image.shape[0] - w-2) * np.random.random(n)
+x = w/2 + (image.shape[1] - w-2) * np.random.random(n)
+y = w/2 + (image.shape[0] - w-2) * np.random.random(n)
 b = 6 * np.random.random(n)
 
 # In[8]:
